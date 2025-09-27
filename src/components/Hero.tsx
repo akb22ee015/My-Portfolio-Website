@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Download, Code2, Sparkles } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Download,
+  Code2,
+  Sparkles,
+} from "lucide-react";
 import profileAvatar from "@/assets/profile-avatar.jpg";
 
 export function Hero() {
@@ -8,8 +15,14 @@ export function Hero() {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+        <div
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-accent/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "2s" }}
+        ></div>
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
@@ -39,9 +52,11 @@ export function Hero() {
               Software Development Engineer
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Final Year Electrical Engineering Student at <span className="text-primary font-semibold">IIT Jodhpur</span>
+              Final Year Electrical Engineering Student at{" "}
+              <span className="text-primary font-semibold">IIT Jodhpur</span>
               <br />
-              Passionate about building scalable web applications and solving complex problems
+              Passionate about building scalable web applications and solving
+              complex problems
             </p>
           </div>
 
@@ -75,10 +90,16 @@ export function Hero() {
                 Get In Touch
               </a>
             </Button>
-            <Button variant="ghost" size="lg">
-              <Download className="w-5 h-5" />
-              Download Resume
-            </Button>
+            <a href="/resume/Atish_Kumar_Resume.pdf" download>
+              <Button
+                variant="ghost"
+                size="lg"
+                className="flex items-center gap-2"
+              >
+                <Download className="w-5 h-5" />
+                Download Resume
+              </Button>
+            </a>
           </div>
 
           {/* Social Links
